@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Cabeçalho</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div class="title-bar">
+        <div class="title-bar-arrows">
+          <div class="arrow left-arrow"></div>
+          <div class="arrow right-arrow"></div>
+        </div>
+        <div class="title-bar-center">
+          <span class="title">Seu Título Personalizado</span>
+        </div>
+        <div class="title-bar-buttons">
+            <button  id="minimizeBtn" class="minimize" >-</button>
+            <button  id="maximizeBtn" class="maximize" >+</button>
+            <button  id="closeBtn" class="close" >x</button>
+        </div>
+      </div>
+
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" onclick="irParaHome()">Home</a></li>
+                <li><a href="#">Tarefas</a></li>
+                <li><a href="#">Notas</a></li>
+            </ul>
+            <div class="user-profile">
+                <div class="user-image">
+                    <span></span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>                
+                </div>
+                <ul class="submenu" id="submenu">
+                    <li><a href="#" onclick="irParaPerfil()">Perfil</a></li>
+                    <li><a href="#" onclick="desconectar()">Desconectar</a></li>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- O restante do conteúdo da sua página aqui -->
+
+<script src="home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

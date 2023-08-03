@@ -1,0 +1,23 @@
+{
+  "name": "projeto-electron",
+  "version": "1.0.0",
+  "description": "App electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npx electron-packager ."
+  },
+  "keywords": [],
+  "author": "Pedro Leal",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.3.0",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "electron-localshortcut": "^3.2.1",
+    "electron-localstorage": "^1.0.5",
+    "electron-store": "^8.1.0",
+    "ionicons": "^7.1.2"
+  }
+}

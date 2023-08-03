@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "admin",
+    "email": "admin@admin.com",
+    "senha": "admin"
+  },
+  {
+    "nome": "admin",
+    "email": "admin@admin2.com",
+    "senha": "admin"
+  },
+  {
+    "nome": "pedro",
+    "email": "teste@teste.com",
+    "senha": "123"
+  }
+]

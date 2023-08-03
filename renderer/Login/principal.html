@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <div class="title-bar">
+        <div class="title-bar-arrows">
+          <div class="arrow left-arrow"></div>
+          <div class="arrow right-arrow"></div>
+        </div>
+        <div class="title-bar-center">
+          <span class="title">Seu Título Personalizado</span>
+        </div>
+        <div class="title-bar-buttons">
+            <button  id="minimizeBtn" class="minimize" >-</button>
+            <button  id="maximizeBtn" class="maximize" >+</button>
+            <button  id="closeBtn" class="close" >x</button>
+        </div>
+      </div>
+
+
+<div class="todoCorpo">
+     <div class="dentroDoW1">
+
+    <div class="w1">
+        <span class="butaoFechar"><ion-icon name="close"></ion-icon></span>
+
+
+        <div class="form-Todo login">
+
+            <h2>Entrar</h2>
+
+                <form action="/login" method="post">
+
+                    <div class="inputs">
+                        <span class="icones"><ion-icon name="mail">
+                        </ion-icon></span>
+                        <input type="email" name="email" required>
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="inputs">
+                        <span class="icones"><ion-icon name="lock-closed"> 
+                        </ion-icon></span>
+                        <input type="password" name="senha" required>
+                        <label>Senha</label>
+                    </div>
+
+                    <div class="lembrarMim">
+                        <label><input type="checkbox">
+                            Lembrar de mim
+                        </label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="butao">Entrar</button>
+
+                    <div class="Login_cadastrar">
+                        <p>Novo por aqui?<a class="criarConta">
+                        Cadastre-se</a></p>
+                    </div>
+
+                </form>
+
+        </div>
+
+
+        <div class="form-Todo criar">
+
+            <h2>Criando conta</h2>
+
+                <form id="signupForm" method="post">
+
+                    <div class="inputs">
+                        <span class="icones"><ion-icon name="person">
+                        </ion-icon></span>
+                        <input type="text" name="nomeC" required>
+                        <label>Nome de Usuário</label>
+                    </div>
+
+                    <div class="inputs">
+                        <span class="icones"><ion-icon name="mail">
+                        </ion-icon></span>
+                        <input type="email" name="emailC" required>
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="inputs">
+                        <span class="icones"><ion-icon name="lock-closed"> 
+                        </ion-icon></span>
+                        <input type="password" name="senhaC" required>
+                        <label>Senha</label>
+                    </div>
+
+                    <div class="lembrarMim">
+                        <label><input type="checkbox" required>
+                            Eu concordo com os termos e condições de uso
+                        </label>
+                    </div>
+
+                    <button type="submit" class="butao">Criar</button>
+
+                    <div class="Login_cadastrar">
+                        <p>Já tem uma conta?<a class="voltarLogin">
+                        Entrar</a></p>
+                    </div>
+
+                </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="principal.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script>
+
+
+const w1 = document.querySelector('.w1');
+
+const linkLogin = document.querySelector('.voltarLogin');
+
+const linkCadastro = document.querySelector('.criarConta');
+
+const botaoFechar = document.querySelector('.butaoFechar');
+
+
+linkCadastro.addEventListener('click', ()=> {
+w1.classList.add('active');
+});
+
+linkLogin.addEventListener('click', ()=> {
+w1.classList.remove('active');
+});
+
+botaoFechar.addEventListener('click', ()=> {
+w1.classList.remove('active-PopUp');
+});
+
+
+</script>
+
+
+</html>
